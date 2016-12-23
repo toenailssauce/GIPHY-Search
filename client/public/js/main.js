@@ -19,7 +19,7 @@ $('#button').click(function(e) {
       	{
       		var clone = $('div.hidden').clone();
           $(clone).attr('id', i);
-      		$("#source").attr('src', data.data[i].images.fixed_height.url);
+      		$(clone).find('img').attr('src', data.data[i].images.fixed_height.url);
       		clone.removeClass("hidden").addClass("col s6 m4");
           $('div.row_1').append(clone);
       	}
